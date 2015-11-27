@@ -1,0 +1,60 @@
+.home {
+  .page-hero--large {
+    height: 585px;
+  }
+
+  .page-hero--medium {
+    height: 485px;
+  }
+
+  .page-hero--home {
+    background: rgb(255, 222, 0); /* Fall-back for browsers that don't support rgba */
+    background: rgba(255, 222, 0, .5);
+
+    .logo {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      /* bring your own prefixes */
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .intro {
+    .jumbotron {
+      background-color: white;
+    }
+  }
+
+  .photo-grid {
+    position: relative;
+
+    .col-lg-3 {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    h2 {
+       position: absolute;
+       top: 200px;
+       left: 0;
+       width: 100%;
+       text-align: center;
+    }
+  }
+
+  .cta {
+    background: url('/images/studio-team.png');
+    background-size: cover;
+
+    h2 {
+      color: #fff;
+    }
+  }
+}
+
+.footer {
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+}
