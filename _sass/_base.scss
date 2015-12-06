@@ -44,7 +44,7 @@
   }
 
   .cta {
-    background: url('../images/studio-team.png');
+    background: url('/images/studio-team.png');
     background-size: cover;
 
     h2 {
@@ -351,7 +351,11 @@
   }
 
   #bottom {
-    background-color: #FFDE00;
+    background: rgba(255, 222, 0, .5);
     padding: 40px 0 30px;
+
+    .heart {
+      color: #E74C3C;
+    }
   }
 }
