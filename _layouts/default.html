@@ -1,15 +1,48 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {% include head.html %}
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+
+    <script src="https://use.typekit.net/uix6rdy.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  </head>
 
   <body>
-
     {% include header.html %}
 
     {{ content }}
-    
-    {% include footer.html %}
-  </body>
 
+    {% include footer.html %}
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="//maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="/js/gmaps.js"></script>
+
+    <script>
+      var map = new GMaps({
+        el: '#map',
+        lat: 51.6077805,
+        lng: -0.6472523,
+        scrollwheel: false
+      })
+
+      map.addMarker({
+        lat: 51.6077805,
+        lng: -0.6472523,
+        title: 'Lemon Studios'
+      });;
+    </script>
+  </body>
 </html>
