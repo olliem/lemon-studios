@@ -1,6 +1,6 @@
 .home {
   .page-hero--large {
-    height: 585px;
+    height: 575px;
   }
 
   .page-hero--medium {
@@ -28,6 +28,11 @@
 
   .photo-grid {
     position: relative;
+    width: 100% !important;
+
+    .row {
+      width: 100% !important;
+    }
 
     .col-lg-3 {
       padding-right: 0;
@@ -79,7 +84,7 @@
       .member-image {
         position: absolute;
         top: 40px;
-        width: 100px;
+        width: 150px;
       }
     }
 
@@ -87,7 +92,7 @@
       border-right: 1px solid #dbdbdb;
 
       .member .member-info {
-        padding-right: 150px;
+        padding-right: 200px;
       }
 
       .member .member-image {
@@ -97,7 +102,7 @@
 
     .right-side {
       .member .member-info {
-        padding-left: 150px;
+        padding-left: 200px;
       }
 
       .member .member-image {
@@ -107,21 +112,124 @@
   }
 
   .pricing {
-    background-color: $brand-yellow;
+    .pricing-table {
+      list-style: none;
+      padding: 0;
+      margin: 60px 0 60px 0;
+    }
 
-    .plan {
-      background-color: #fff;
-      color: #4f4f4f;
+    .pricing-package {
+      position: relative;
+      margin: 40px 0 0;
+      background-color: #f6f6f6;
+      text-align: center;
+      min-height: 345px;
 
-      ul {
-        li {
-          margin-top: 10px;
+      .pricing-package-header {
+        background-color: $brand-pink;
+        border-bottom-color: $brand-yellow-opac-hex;
+        border-bottom-width: 5px;
+        border-bottom-style: solid;
+
+        .price-title {
+          margin: 0;
+          padding: 17px 30px;
+          border-bottom-width: 1px;
+          border-bottom-style: solid;
+          border-bottom-color: rgba(255,255,255,0.1);
+          font-size: 14px;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+          color: #fff;
+        }
+
+        .price {
+          padding: 27px 30px 17px;
+          color: #fff;
+          font-weight: bold;
+          line-height: 0.7;
+          letter-spacing: 0.05em;
+
+          .price-currency {
+            vertical-align: bottom;
+            font-size: 20px;
+          }
+
+          .price-number {
+            vertical-align: bottom;
+            font-size: 60px;
+          }
+
+          .price-decimal {
+            vertical-align: top;
+            font-size: 30px;
+          }
+
+          .price-description {
+            padding: 0 30px 26px;
+            font-style: italic;
+            color: #888;
+          }
+        }
+
+        .price-featured {
+          position: absolute;
+          width: 100%;
+          padding: 10px 30px 11px;
+          font-size: 14px;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+          color: #000;
         }
       }
+
+      .pricing-package-items {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          padding: 10px 30px;
+          border-top-width: 1px;
+          border-top-style: solid;
+          border-top-color: rgba(0,0,0,0.05);
+        }
+
+        li:first-child {
+          border-top: none;
+        }
+
+        del {
+          text-decoration: none;
+          opacity: 0.4;
+        }
+      }
+    }
+
+    .pricing-package-featured {
+      margin-top: 0;
+    }
+
+    .pricing-package-featured .pricing-package-header {
+      border-bottom-width: 45px;
+    }
+  }
+
+  .testimonials {
+    background: #eee;
+    text-align: center;
+    padding: 60px 0;
+
+    .section-title {
+      margin: 0 0 30px;
+      text-align: center;
+      position: relative;
     }
   }
 
   .cta-enquiry {
+    background-color: $brand-yellow-opac;
+
     .enquiry-form .btn-primary {
       padding: 15px 55px;
       display: inline-block;
@@ -133,8 +241,18 @@
 }
 
 .header {
-  .social-links {
+  .social-link {
+    margin: 10px 5px 5px 10px;
+    padding: 5px;
     position: fixed;
+    font-size: 1.33333333em;
+    line-height: .75em;
+    z-index: 9999;
+
+    a {
+      color: $brand-pink;
+      text-decoration: none;
+    }
   }
 
   #sidebar-wrapper {
@@ -351,7 +469,7 @@
   }
 
   #bottom {
-    background: rgba(255, 222, 0, .5);
+    background: $brand-yellow-opac;
     padding: 40px 0 30px;
 
     .heart {
