@@ -1,10 +1,9 @@
 title: Lemon Studios
-email: example@domain.com
-url: "http://yourdomain.com"
+email: team@lemonpt.co.uk
+url: "http://lemonpt.co.uk"
 baseurl: "/lemon-studios"
 instagram: https://www.instagram.com/supersamfitness/
 description: >
   Blah blah blah. Example description
 
-# Build settings
 markdown: kramdown

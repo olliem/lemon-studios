@@ -190,9 +190,6 @@
 
         li {
           padding: 10px 30px;
-          border-top-width: 1px;
-          border-top-style: solid;
-          border-top-color: rgba(0,0,0,0.05);
         }
 
         li:first-child {
@@ -224,6 +221,10 @@
       margin: 0 0 30px;
       text-align: center;
       position: relative;
+    }
+
+    ul {
+      list-style: none;
     }
   }
 
@@ -417,16 +418,8 @@
   	background-color:#0EB1F2;
   }
 
-  .social-icons li i.fa-google-plus {
-  	background-color:#D54831;
-  }
-
-  .social-icons li i.fa-linkedin {
+  .social-icons li i.fa-instagram {
   	background-color:#1F84D2;
-  }
-
-  .social-icons li i.fa-pinterest {
-  	background-color:#CD565C;
   }
 
   .contact-info .event{

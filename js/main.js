@@ -15,3 +15,8 @@ $(document).click(function(){
     $("#sidebar-wrapper").removeClass("active");
   }
 });
+
+$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+  event.preventDefault();
+  $(this).ekkoLightbox();
+});
