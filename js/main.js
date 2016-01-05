@@ -20,3 +20,11 @@ $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
   event.preventDefault();
   $(this).ekkoLightbox();
 });
+
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 500) {
+    $('.social-link').addClass("hidden");
+  } else {
+    $('.social-link').removeClass("hidden");
+  }
+});
