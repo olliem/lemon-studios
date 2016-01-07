@@ -1,9 +1,10 @@
 title: Lemon Studios
-email: team@lemonpt.co.uk
-url: "http://lemonpt.co.uk"
-baseurl: "/lemon-studios"
+email: lemonptstudios@gmail.com
+url: "http://www.lemonstudios.co.uk/"
+baseurl: "/"
 instagram: https://www.instagram.com/supersamfitness/
 description: >
-  Blah blah blah. Example description
+  A bespoke personal training service, committed to results in posture, body
+  composition, physical and mental state for a lifetime positive benefit.
 
 markdown: kramdown
