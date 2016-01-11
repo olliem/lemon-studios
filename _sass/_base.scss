@@ -9,7 +9,7 @@
 
   .page-hero--home {
     background: rgb(255, 222, 0); /* Fall-back for browsers that don't support rgba */
-    background: rgba(255, 222, 0, .5);
+    background: rgba(255, 222, 0, .8);
 
     .logo {
       position: relative;
@@ -209,6 +209,10 @@
 
     .pricing-package-featured .pricing-package-header {
       border-bottom-width: 45px;
+    }
+
+    .terms {
+      color: $brand-pink;
     }
   }
 
