@@ -10,12 +10,10 @@
   .page-hero--home {
     background: rgb(255, 222, 0); /* Fall-back for browsers that don't support rgba */
     background: rgba(255, 222, 0, .7);
+    text-align: center;
 
     .logo {
-      position: relative;
-      top: 50%;
-      left: 48%;
-      transform: translate(-50%, -50%);
+      margin-top: 130px;
     }
   }
 
